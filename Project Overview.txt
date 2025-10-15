@@ -1,0 +1,47 @@
+Project Overview
+
+Problem Statement: You are going to help AI and Computer Vision Communities by developing a Captcha Recognition  system. You design and train your model, then test it. Your system should be able to get a CAPTCHA, and then show its contents/characters as a text string. 
+
+Components + Metrics + Grade Breakdown (Total 25%)
+- Contents, Approach, Deployment: Make it as clear as possible (10%)
+- Poster Quality: Clear and conveys the key project achievements well to the reader (2%)
+- Q&A: Ability to thoroughly explain project process and considerations (5%)
+- Curiosity, Exploration: Demonstration of deep understanding of the method's mechanisms instead of only achieving high-accuracy results (5%)
+- Creativity: Novelty in the proposed solution (3%)
+
+Core expectations:
+1. Prepare the given dataset. (data cleaning, visualization, pre-processing, data 
+normalization, tokenization, etc) [This is important!!] The Dataset could be a bit dirty. 
+2. Minimally, develop a vanilla baseline character or string recognition system.
+3. Provide improvements for the baseline method.
+- Show the methods you chose to improve the baseline classification performance
+- Explain how your method(s) works
+- Why you choose this approach? Why it works or why it does not work.
+4. Show empirical observations. (Plot learning curves, recognition scores, numerical results)
+5. Present your work CLEARLY and nicely.
+
+Data
+- 3 directories: Train and Test for training and testing your models. Main directory comprises all 10000 images.
+- The file name suggests the contents of the Captcha, ending with “-0.png”
+- If you manage to find any dirty data sample, just remove it.
+- If you manage to find any mismatch between the captcha contents and the file name, correct the file name.
+- Use your test set for validation too.
+- Report the metrics after training and testing both. 
+- Does the dataset need any filtering and pruning?
+
+Other key points:
+- Preferred evaluation metric: Recognition Accuracy, Precision, and Recall
+- You may find tokenization useful. It means that you may need to separate characters and recognize them individually (*) How to separate characters in a Captcha image? Do we need to normalize the characters?
+- Using LLMs to recognize Captchas is not allowed. 
+
+Bonus: 
+- Develop a generative model to generate new Captchas.
+- You may train your generative model using all the Captchas available in the Main directory.
+- Then, you may test your Captcha generator using your Captcha Recognition model.
+- Bonus will be up to 4% extra total score, but the ceiling will still be 25% for the project.
+
+Deliverables:
+- Code
+- Poster
+- Presentation (15/11/2025)
+
